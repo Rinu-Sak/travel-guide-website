@@ -7,7 +7,7 @@ header{
     width: 100%;
     height: 100vh;
     background-image: url(images/mount.jpg);
-    background-position: 100vw;
+    background-position: center;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -15,12 +15,15 @@ header{
 }
 
 .content{
-    margin-bottom: 150px;
+    margin-bottom: 250px;
     color: white;
     text-align: center;
 }
 .content h2{
     font-size: 4vmin;
+}
+.logo{
+    color: black;
 }
 .line{
     width: 150px;
@@ -55,15 +58,20 @@ ul{
     width: 100%;
     padding: 20px;
     justify-content: space-between;
-    color: aqua;
+    color: black ;
 }
 .nav-links{
     display: flex;
     align-items: center;
+    right: -900px;
 }
 .nav-links li{
     margin: 0 30px;
+    cursor: pointer;
 
+}
+.nav-links li:hover{
+    color: cyan;
 }
 .active{
     color: cyan;
@@ -73,7 +81,7 @@ ul{
 .menu-btn{
     position: absolute;
     top: 30px;
-    right: 30px;
+    right:30px; 
     cursor: pointer;
     display: none;
 }
@@ -205,6 +213,17 @@ p{
     color: cyan;
     background: black;
 }
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    
+}
 @media only screen and (max-width:850px){
     .navbar{
         padding: 0;
@@ -215,10 +234,7 @@ p{
         left: 30px;
     }
 
-    .mobile-menu{
-        margin-top: 0px;
-
-    }
+    
     .nav-links{
         flex-direction: column;
         width: 100%;
@@ -235,5 +251,37 @@ p{
 
     .nav-links li{
         margin: 30px auto;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .column{
+        margin: 20px auto;
+    }
+    .column img{
+        max-width: 90%;
+
+    }
+    .explore-content{
+        width: 100%;
+    }
+    .tours .column{
+        width: 100%;
+
+    }
+    .col-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+    .col-gallery img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+        
     }
 }
