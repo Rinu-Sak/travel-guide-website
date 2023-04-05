@@ -129,7 +129,38 @@ p{
 .img:hover{
     transform: translateY(-7px);
 }
-
+.explore{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), #464646), url(images/explore1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    margin: 100px auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+    margin-bottom: 5px;
+    margin-top: 80px;
+}
+.explore-content p{
+    color: aliceblue;
+}
+.explore-content .learn{
+    margin-top: 40px;
+}
+.explore-content .line{
+    margin-bottom: 50px;
+}
 
 @media only screen and (max-width:850px){
     .navbar{
